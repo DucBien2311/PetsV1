@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellPet" rowHeight="120" id="KGk-i7-Jjw" customClass="CellPets" customModule="MyPets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FKD-Tw-LIo">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="Ayu-5t-gCp"/>
+                            <constraint firstAttribute="height" constant="115" id="Yb9-Br-4tX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLZ-eP-Bf6">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ISn-3L-3yy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fE-sC-xxf">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="O2P-vK-7Ct"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kind - Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juM-m3-zLm">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="79l-FN-nl2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9fE-sC-xxf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="3eh-ip-3Ny"/>
+                    <constraint firstItem="iLZ-eP-Bf6" firstAttribute="top" secondItem="9fE-sC-xxf" secondAttribute="bottom" constant="8" id="DF6-4j-xx9"/>
+                    <constraint firstItem="juM-m3-zLm" firstAttribute="leading" secondItem="FKD-Tw-LIo" secondAttribute="trailing" constant="8" id="Fuo-0a-cqP"/>
+                    <constraint firstItem="FKD-Tw-LIo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MaX-pS-6iv"/>
+                    <constraint firstItem="juM-m3-zLm" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Rdu-2b-9kv"/>
+                    <constraint firstItem="juM-m3-zLm" firstAttribute="top" secondItem="iLZ-eP-Bf6" secondAttribute="bottom" constant="8" id="XDC-mx-M8F"/>
+                    <constraint firstItem="9fE-sC-xxf" firstAttribute="leading" secondItem="FKD-Tw-LIo" secondAttribute="trailing" constant="8" id="cwC-Hb-GBa"/>
+                    <constraint firstItem="FKD-Tw-LIo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dNw-9c-Dw6"/>
+                    <constraint firstItem="9fE-sC-xxf" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dVX-I5-Ymu"/>
+                    <constraint firstItem="iLZ-eP-Bf6" firstAttribute="leading" secondItem="FKD-Tw-LIo" secondAttribute="trailing" constant="8" id="hv8-Wp-9y4"/>
+                    <constraint firstItem="iLZ-eP-Bf6" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="k4i-5E-RnK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img_Pet" destination="FKD-Tw-LIo" id="4rk-S7-lfT"/>
+                <outlet property="lbl_DatePet" destination="iLZ-eP-Bf6" id="r2B-Dq-bOF"/>
+                <outlet property="lbl_KindGender" destination="juM-m3-zLm" id="EHL-cK-fj7"/>
+                <outlet property="lbl_NamePet" destination="9fE-sC-xxf" id="PxT-0L-B7X"/>
+            </connections>
+            <point key="canvasLocation" x="-379" y="2.5"/>
+        </tableViewCell>
+    </objects>
+</document>
